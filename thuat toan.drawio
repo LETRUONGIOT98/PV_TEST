@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2024-06-25T03:17:41.466Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="WrZc8pbxgoUJIrV_wHox" version="24.4.14" type="device">
+  <diagram name="Trang-1" id="FBqoe5mu8_MprZQruSBA">
+    <mxGraphModel dx="1390" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3740" pageHeight="1969" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Bắt đầu&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Đọc giá trị từ Serial, pwm = 255&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="240" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FqFNhPbaOEABwgwSLQeP-1" target="FqFNhPbaOEABwgwSLQeP-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="410" as="sourcePoint" />
+            <mxPoint x="730" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-4" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Giá trị == 1 &amp;amp;&amp;amp; pwm &amp;gt; 0&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="350" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FqFNhPbaOEABwgwSLQeP-2" target="FqFNhPbaOEABwgwSLQeP-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="360" as="sourcePoint" />
+            <mxPoint x="730" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-7" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;pwm = pwm - 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="540" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-8" value="Đúng" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FqFNhPbaOEABwgwSLQeP-4" target="FqFNhPbaOEABwgwSLQeP-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="560" as="sourcePoint" />
+            <mxPoint x="730" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-10" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;Analog Write mosfet = pwm&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="660" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FqFNhPbaOEABwgwSLQeP-7" target="FqFNhPbaOEABwgwSLQeP-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="610" as="sourcePoint" />
+            <mxPoint x="730" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-12" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;Analog Write mosfet = 0&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="660" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-13" value="Sai" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FqFNhPbaOEABwgwSLQeP-4" target="FqFNhPbaOEABwgwSLQeP-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="510" as="sourcePoint" />
+            <mxPoint x="730" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1075" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FqFNhPbaOEABwgwSLQeP-10" target="FqFNhPbaOEABwgwSLQeP-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="510" as="sourcePoint" />
+            <mxPoint x="730" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="760" />
+              <mxPoint x="370" y="760" />
+              <mxPoint x="370" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FqFNhPbaOEABwgwSLQeP-15" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="FqFNhPbaOEABwgwSLQeP-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="760" as="sourcePoint" />
+            <mxPoint x="730" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1075" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
